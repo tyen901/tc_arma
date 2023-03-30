@@ -6,7 +6,8 @@ class CfgPatches
     {
         author = "Tyen";
         requiredAddons[] = {"A3_Characters_F", "A3_Data_F", "A3_Soft_F"};
-        units[] = {
+        units[] =
+        {
             "TNC_CRYE_M81_WHITE_FULL",
             "TNC_CRYE_M81_RED_FULL",
             "TNC_CRYE_M81_GREEN_FULL",
@@ -19,8 +20,12 @@ class CfgPatches
             "TNC_CRYE_M81_GREEN_ROLL",
             "TNC_CRYE_M81_BLUE_ROLL",
             "TNC_CRYE_M81_YELLOW_ROLL",
+            "TNC_CRYE_M81_PURPLE_ROLL",
+            "TNC_CRYE_M81_ORANGE_ROLL",
         };
         weapons[] = {
+        weapons[] =
+        {
             "TNC_U_CRYE_M81_WHITE_FULL",
             "TNC_U_CRYE_M81_RED_FULL",
             "TNC_U_CRYE_M81_GREEN_FULL",
