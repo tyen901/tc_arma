@@ -22,8 +22,12 @@ class CfgPatches
             "TNC_CRYE_M81_YELLOW_ROLL",
             "TNC_CRYE_M81_PURPLE_ROLL",
             "TNC_CRYE_M81_ORANGE_ROLL",
+            "TNC_acu_m81_sudan",
+            "TNC_acu_m81_sudan_rolled",
+            "TNC_guerilla_garb_m81_sudan",
+            "TNC_guerilla_jacket_m81_sudan",
+            "TNC_guerilla_tshirt_m81_sudan"
         };
-        weapons[] = {
         weapons[] =
         {
             "TNC_U_CRYE_M81_WHITE_FULL",
@@ -135,6 +139,66 @@ class CfgVehicles
     {
         uniformClass = "TNC_U_CRYE_M81_ORANGE_ROLL";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_orange_diffuse.paa"};
+    };
+   
+    // ACU M81 Sudan
+    class aegis_man_acu_m81;
+    class TNC_acu_m81_sudan
+    {
+        scope = 2;
+        scopeCurator = 0;
+        displayName = "Soldier ACU (M81 Sudan)";
+        uniformClass = "TNC_U_acu_m81";
+        hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\ia_soldier_01_clothing_m81_sudan_diffuse.paa"};
+    };
+    class aegis_man_acu_rs_m81;
+    class TNC_acu_rs_m81_sudan
+    {
+        scope = 2;
+        scopeCurator = 0;
+        displayName = "Soldier ACU (M81 Sudan, Rolled Sleeves)";
+        uniformClass = "TNC_U_acu_rs_m81";
+        hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\ia_soldier_01_clothing_m81_sudan_diffuse.paa"};
+    };
+
+    // M81 Sudan
+    class aegis_man_guerilla_garb_m81;
+    class TNC_guerilla_garb_m81_sudan : aegis_man_guerilla_garb_m81
+    {
+        author = "Tyen";
+        scope = 2;
+        scopeCurator = 0;
+        displayName = "Soldier Guerilla Garb (M81 Sudan)";
+        uniformClass = "TNC_U_guerilla_garb_m81_sudan";
+        hiddenSelectionsTextures[] = {
+            "\TNC\tnc_uniforms\data\uniforms\officer_spc_co_m81_sudan_diffuse.paa",
+            "\TNC\tnc_uniforms\data\uniforms\officer_spc_co_m81_sudan_diffuse.paa"};
+    };
+    class aegis_man_guerilla_jacket_m81;
+    class TNC_guerilla_jacket_m81_sudan : aegis_man_guerilla_jacket_m81
+    {
+        author = "Tyen";
+        scope = 2;
+        scopeCurator = 0;
+        displayName = "Soldier Guerilla Jacket (M81 Sudan)";
+        uniformClass = "TNC_U_guerilla_jacket_m81_sudan";
+        hiddenSelectionsTextures[] = {
+            "\TNC\tnc_uniforms\data\uniforms\officer_spc_co_m81_sudan_diffuse.paa",
+            "\a3_aegis\characters_f_aegis\uniforms\data\mcu_pants_m81_co.paa",
+        };
+    };
+    class aegis_man_guerilla_tshirt_m81;
+    class TNC_guerilla_tshirt_m81_sudan : aegis_man_guerilla_tshirt_m81
+    {
+        author = "Tyen";
+        scope = 2;
+        scopeCurator = 0;
+        displayName = "Soldier Guerilla T-Shirt (M81 Sudan)";
+        uniformClass = "TNC_U_guerilla_tshirt_m81_sudan";
+        hiddenSelectionsTextures[] = {
+            "\a3\characters_f_orange\uniforms\data\c_cloth1_olive_co.paa",
+            "\TNC\tnc_uniforms\data\uniforms\ia_soldier_01_clothing_m81_sudan_diffuse.paa",
+        };
     };
 };
 class CfgWeapons
@@ -292,6 +356,86 @@ class CfgWeapons
             containerClass = "Supply40";
         };
     };
+    
+    // M81 Sudan Assault Combat Uniform
+    class aegis_acu_m81;
+    class TNC_U_acu_m81_sudan : aegis_acu_m81
+    {
+        scope = 2;
+        author = "Tyen";
+        displayName = "Assault Combat Uniform (M81 Sudan)";
+        hiddenSelectionsTextures[] = {
+            "\TNC\tnc_uniforms\data\uniforms\ia_soldier_01_clothing_m81_sudan_diffuse.paa",
+        };
+        class ItemInfo : UniformItem
+        {
+            uniformClass = "TNC_acu_m81_sudan";
+            containerClass = "Supply60";
+        };
+    };
+    class aegis_acu_rs_m81;
+    class TNC_U_acu_rs_m81_sudan : aegis_acu_rs_m81
+    {
+        scope = 2;
+        author = "Tyen";
+        displayName = "Assault Combat Uniform (M81 Sudan, Rolled Sleeves)";
+        hiddenSelectionsTextures[] = {
+            "\TNC\tnc_uniforms\data\uniforms\ia_soldier_01_clothing_m81_sudan_diffuse.paa",
+        };
+        class ItemInfo : UniformItem
+        {
+            uniformClass = "TNC_acu_rs_m81_sudan";
+            containerClass = "Supply60";
+        };
+    };
+
+    // M81 Sudan Aegis Guerilla
+    class aegis_guerilla_garb_m81;
+    class TNC_U_guerilla_garb_m81_sudan : aegis_guerilla_garb_m81
+    {
+        scope = 2;
+        author = "Tyen";
+        displayName = "Guerilla Garb M81 Sudan";
+        hiddenSelectionsTextures[] = {
+            "\TNC\tnc_uniforms\data\uniforms\officer_spc_co_m81_sudan_diffuse.paa",
+        };
+        class ItemInfo : UniformItem
+        {
+            uniformClass = "TNC_guerilla_garb_m81_sudan";
+            containerClass = "Supply60";
+        };
+    };
+    class aegis_guerilla_jacket_m81;
+    class TNC_U_guerilla_jacket_m81_sudan : aegis_guerilla_jacket_m81
+    {
+        scope = 2;
+        author = "Tyen";
+        displayName = "Guerilla Jacket M81 Sudan";
+        hiddenSelectionsTextures[] = {
+            "\TNC\tnc_uniforms\data\uniforms\officer_spc_co_m81_sudan_diffuse.paa",
+        };
+        class ItemInfo : UniformItem
+        {
+            uniformClass = "TNC_guerilla_jacket_m81_sudan";
+            containerClass = "Supply60";
+        };
+    };
+    class aegis_guerilla_tshirt_m81;
+    class TNC_U_guerilla_tshirt_m81_sudan : aegis_guerilla_tshirt_m81
+    {
+        scope = 2;
+        author = "Tyen";
+        displayName = "Guerilla T-Shirt M81 Sudan";
+        hiddenSelectionsTextures[] = {
+            "\TNC\tnc_uniforms\data\uniforms\officer_spc_co_m81_sudan_diffuse.paa",
+        };
+        class ItemInfo : UniformItem
+        {
+            uniformClass = "TNC_guerilla_tshirt_m81_sudan";
+            containerClass = "Supply60";
+        };
+    };
+    
     class CUP_H_USArmy_HelmetACH_UCP;
     class TNC_H_ACH_M81_WHITE : CUP_H_USArmy_HelmetACH_UCP
     {
