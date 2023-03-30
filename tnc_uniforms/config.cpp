@@ -56,17 +56,16 @@ class CfgPatches
 };
 class CfgVehicles
 {
+    // Crye Uniforms
     class CUP_CRYE_TAN_Full;
-    class TNC_CRYE_M81_WHITE_FULL: CUP_CRYE_TAN_Full
+    class TNC_CRYE_M81_WHITE_FULL : CUP_CRYE_TAN_Full
     {
         author = "Tyen";
         scope = 2;
         scopeCurator = 0;
-        displayName = "Soldier";
-        hiddenSelections[] = {"Camo","insignia"};
+        displayName = "Soldier CRYE M81 White Full";
         uniformClass = "TNC_U_CRYE_M81_WHITE_FULL";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_white_diffuse.paa"};
-        hiddenSelectionsMaterials[] = {"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USarmy\data\delta\crye_g3_mcam_v1.rvmat"};
     };
     class TNC_CRYE_M81_RED_FULL : TNC_CRYE_M81_WHITE_FULL
     {
@@ -99,13 +98,13 @@ class CfgVehicles
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_orange_diffuse.paa"};
     };
     class CUP_CRYE_TAN_Roll;
-    class TNC_CRYE_M81_WHITE_ROLL: CUP_CRYE_TAN_Roll
+    class TNC_CRYE_M81_WHITE_ROLL : CUP_CRYE_TAN_Roll
     {
         author = "Tyen";
         scope = 2;
         scopeCurator = 0;
         displayName = "Soldier";
-        hiddenSelections[] = {"Camo","insignia"};
+        hiddenSelections[] = {"Camo", "insignia"};
         uniformClass = "TNC_U_CRYE_M81_WHITE_ROLL";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_white_diffuse.paa"};
         hiddenSelectionsMaterials[] = {"\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USarmy\data\delta\crye_g3_mcam_v1.rvmat"};
@@ -204,77 +203,79 @@ class CfgVehicles
 class CfgWeapons
 {
     class UniformItem;
+    
+    // Crye Multicolor
     class CUP_U_CRYE_TAN_Full;
-    class TNC_U_CRYE_M81_WHITE_FULL: CUP_U_CRYE_TAN_Full
+    class TNC_U_CRYE_M81_WHITE_FULL : CUP_U_CRYE_TAN_Full
     {
         scope = 2;
         picture = "\CUP\Creatures\People\Military\CUP_Creatures_People_Military_USArmy\data\ui\icon_CUP_CRYE_V1_Full.paa";
         displayName = "Crye M81 White (Full)";
         allowedSlots[] = {901};
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
-        hiddenSelections[] = {"Camo","insignia"};
+        hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_white_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_WHITE_FULL";
             containerClass = "Supply40";
         };
     };
-    class TNC_U_CRYE_M81_RED_FULL: TNC_U_CRYE_M81_WHITE_FULL
+    class TNC_U_CRYE_M81_RED_FULL : TNC_U_CRYE_M81_WHITE_FULL
     {
         displayName = "Crye M81 Red (Full)";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_red_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_RED_FULL";
             containerClass = "Supply40";
         };
     };
-    class TNC_U_CRYE_M81_GREEN_FULL: TNC_U_CRYE_M81_WHITE_FULL
+    class TNC_U_CRYE_M81_GREEN_FULL : TNC_U_CRYE_M81_WHITE_FULL
     {
         displayName = "Crye M81 Green (Full)";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_green_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_GREEN_FULL";
             containerClass = "Supply40";
         };
     };
-    class TNC_U_CRYE_M81_BLUE_FULL: TNC_U_CRYE_M81_WHITE_FULL
+    class TNC_U_CRYE_M81_BLUE_FULL : TNC_U_CRYE_M81_WHITE_FULL
     {
         displayName = "Crye M81 Blue (Full)";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_blue_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_BLUE_FULL";
             containerClass = "Supply40";
         };
     };
-    class TNC_U_CRYE_M81_YELLOW_FULL: TNC_U_CRYE_M81_WHITE_FULL
+    class TNC_U_CRYE_M81_YELLOW_FULL : TNC_U_CRYE_M81_WHITE_FULL
     {
         displayName = "Crye M81 Yellow (Full)";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_yellow_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_YELLOW_FULL";
             containerClass = "Supply40";
         };
     };
-    class TNC_U_CRYE_M81_PURPLE_FULL: TNC_U_CRYE_M81_WHITE_FULL
+    class TNC_U_CRYE_M81_PURPLE_FULL : TNC_U_CRYE_M81_WHITE_FULL
     {
         displayName = "Crye M81 Purple (Full)";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_purple_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_PURPLE_FULL";
             containerClass = "Supply40";
         };
     };
-    class TNC_U_CRYE_M81_ORANGE_FULL: TNC_U_CRYE_M81_WHITE_FULL
+    class TNC_U_CRYE_M81_ORANGE_FULL : TNC_U_CRYE_M81_WHITE_FULL
     {
         displayName = "Crye M81 Orange (Full)";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_orange_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_ORANGE_FULL";
             containerClass = "Supply40";
@@ -288,9 +289,9 @@ class CfgWeapons
         displayName = "Crye M81 White (Rolled)";
         allowedSlots[] = {901};
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_universal_F.p3d";
-        hiddenSelections[] = {"Camo","insignia"};
+        hiddenSelections[] = {"Camo", "insignia"};
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_white_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_WHITE_ROLL";
             containerClass = "Supply40";
@@ -300,7 +301,7 @@ class CfgWeapons
     {
         displayName = "Crye M81 Red (Rolled)";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_red_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_RED_ROLL";
             containerClass = "Supply40";
@@ -310,7 +311,7 @@ class CfgWeapons
     {
         displayName = "Crye M81 Green (Rolled)";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_green_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_GREEN_ROLL";
             containerClass = "Supply40";
@@ -320,7 +321,7 @@ class CfgWeapons
     {
         displayName = "Crye M81 Blue (Rolled)";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_blue_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_BLUE_ROLL";
             containerClass = "Supply40";
@@ -330,7 +331,7 @@ class CfgWeapons
     {
         displayName = "Crye M81 Yellow (Rolled)";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_yellow_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_YELLOW_ROLL";
             containerClass = "Supply40";
@@ -340,7 +341,7 @@ class CfgWeapons
     {
         displayName = "Crye M81 Purple (Rolled)";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_purple_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_PURPLE_ROLL";
             containerClass = "Supply40";
@@ -350,7 +351,7 @@ class CfgWeapons
     {
         displayName = "Crye M81 Orange (Rolled)";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\cyre_g3_m81_orange_diffuse.paa"};
-        class ItemInfo: UniformItem
+        class ItemInfo : UniformItem
         {
             uniformClass = "TNC_CRYE_M81_ORANGE_ROLL";
             containerClass = "Supply40";
@@ -436,6 +437,7 @@ class CfgWeapons
         };
     };
     
+    // ACH Helmets
     class CUP_H_USArmy_HelmetACH_UCP;
     class TNC_H_ACH_M81_WHITE : CUP_H_USArmy_HelmetACH_UCP
     {
