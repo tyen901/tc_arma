@@ -142,21 +142,17 @@ class CfgVehicles
    
     // ACU M81 Sudan
     class aegis_man_acu_m81;
-    class TNC_acu_m81_sudan
+    class TNC_acu_m81_sudan : aegis_man_acu_m81
     {
-        scope = 2;
-        scopeCurator = 0;
-        displayName = "Soldier ACU (M81 Sudan)";
-        uniformClass = "TNC_U_acu_m81";
+        author = "Tyen";
+        uniformClass = "TNC_U_acu_m81_sudan";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\ia_soldier_01_clothing_m81_sudan_diffuse.paa"};
     };
     class aegis_man_acu_rs_m81;
-    class TNC_acu_rs_m81_sudan
+    class TNC_acu_rs_m81_sudan : aegis_man_acu_rs_m81
     {
-        scope = 2;
-        scopeCurator = 0;
-        displayName = "Soldier ACU (M81 Sudan, Rolled Sleeves)";
-        uniformClass = "TNC_U_acu_rs_m81";
+        author = "Tyen";
+        uniformClass = "TNC_U_acu_rs_m81_sudan";
         hiddenSelectionsTextures[] = {"TNC\tnc_uniforms\data\uniforms\ia_soldier_01_clothing_m81_sudan_diffuse.paa"};
     };
 
