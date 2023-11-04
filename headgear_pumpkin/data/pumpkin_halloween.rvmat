@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="TC\headgear_pumpkin\data\pumpkin_halloween_nohq.paa";
+	texture="tc\headgear_pumpkin\data\pumpkin_halloween_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="TC\headgear_pumpkin\data\pumpkin_halloween_smdi.paa";
+	texture="tc\headgear_pumpkin\data\pumpkin_halloween_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{
