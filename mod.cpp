@@ -1,4 +1,4 @@
-name = "TN Customs";
+name = "Tyen Customs";
 picture = "logo.paa";
 logo = "logo.paa";
 logoOver = "logo.paa";
