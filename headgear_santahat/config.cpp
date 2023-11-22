@@ -1,24 +1,24 @@
 #define _ARMA_
 
-#define SANTA_HAT_HELMET_VARIATION(NAME, NICE_NAME, TEXTURE) \
-    class ##NAME## : TC_Helmet_Hat_Santa \
+#define SANTA_HAT_HELMET_VARIATION(PARENT, NAME, NICE_NAME, TEXTURE) \
+    class NAME : PARENT \
     { \
-        displayName = ##NICE_NAME##; \
-        hiddenSelectionsTextures[] = {##TEXTURE##}; \
+        displayName = NICE_NAME; \
+        hiddenSelectionsTextures[] = {TEXTURE}; \
     }
 
-#define SANTA_HAT_NVG_VARIATION(NAME, NICE_NAME, TEXTURE) \
-    class ##NAME## : TC_NVG_Hat_Santa \
+#define SANTA_HAT_NVG_VARIATION(PARENT, NAME, NICE_NAME, TEXTURE) \
+    class NAME : PARENT \
     { \
-        displayName = ##NICE_NAME##; \
-        hiddenSelectionsTextures[] = {##TEXTURE##}; \
+        displayName = NICE_NAME; \
+        hiddenSelectionsTextures[] = {TEXTURE}; \
     }
 
-#define SANTA_HAT_GLASSES_VARIATION(NAME, NICE_NAME, TEXTURE) \
-    class ##NAME## : TC_Glasses_Hat_Santa_Base \
+#define SANTA_HAT_GLASSES_VARIATION(PARENT, NAME, NICE_NAME, TEXTURE) \
+    class NAME : PARENT \
     { \
-        displayName = ##NICE_NAME##; \
-        hiddenSelectionsTextures[] = {##TEXTURE##}; \
+        displayName = NICE_NAME; \
+        hiddenSelectionsTextures[] = {TEXTURE}; \
     }
 
 class CfgPatches
@@ -28,7 +28,20 @@ class CfgPatches
         units[] = {};
         weapons[] = 
         {
-            "TC_NVG_Hat_Santa"
+            "TC_Helmet_Hat_Santa1",
+            "TC_Helmet_Hat_Santa1_BluePattern1",
+            "TC_Helmet_Hat_Santa1_FestivePattern1",
+            "TC_Helmet_Hat_Santa1_Buffalo1",
+            "TC_Helmet_Hat_Santa1_Camo_Aus1",
+            "TC_Helmet_Hat_Santa1_Camo_Cadpat1",
+            "TC_Helmet_Hat_Santa1_Camo_Tigerstripe1",
+            "TC_Helmet_Hat_Santa1_Garf1",
+            "TC_Helmet_Hat_Santa1_Missing1",
+            "TC_Helmet_Hat_Santa1_Pink1",
+            "TC_Helmet_Hat_Santa1_Stealth1",
+            "TC_Helmet_Hat_Santa1_Pride1",
+            "TC_Helmet_Hat_Santa1_Trans1",
+            "TC_Helmet_Hat_Santa1_Bi1",
         };
         requiredVersion = 0.1;
         requiredAddons[] = 
@@ -58,7 +71,7 @@ class CfgWeapons
 	  	class ItemInfo;
 	};
 
-    class TC_Helmet_Hat_Santa: HelmetBase
+    class TC_Helmet_Hat_Santa1: HelmetBase
     {
         scope = 2;
         author = "Tyen";
@@ -69,7 +82,7 @@ class CfgWeapons
         {
             camo1
         };
-        hiddenSelectionsTextures[] = {"tc\headgear_santahat\data\t_santahat_co_red1.paa"};
+        hiddenSelectionsTextures[] = {"tc\headgear_santahat\data\t_santahat_co_santa1.paa"};
         class ItemInfo: ItemInfo
         {
             mass = 40;
@@ -83,16 +96,22 @@ class CfgWeapons
         };
     };
 
-    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa_BluePattern, "Santa Hat (Blue Pattern)", "tc\headgear_santahat\data\t_santahat_co_bluepattern1.paa");
-    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa_CamoM81, "Santa Hat (Camo M81)", "tc\headgear_santahat\data\t_santahat_co_camo1.paa");
-    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa_MixedPattern, "Santa Hat (Mixed Pattern)", "tc\headgear_santahat\data\t_santahat_co_mixedpattern1.paa");
-    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa_FlagPride, "Santa Hat (Pride)", "tc\headgear_santahat\data\t_santahat_co_flagpride1.paa");
-    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa_FlagTrans, "Santa Hat (Trans)", "tc\headgear_santahat\data\t_santahat_co_flagtrans1.paa");
-    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa_RedPattern1, "Santa Hat (Red Pattern 1)", "tc\headgear_santahat\data\t_santahat_co_redpattern1.paa");
-    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa_RedPattern2, "Santa Hat (Red Pattern 2)", "tc\headgear_santahat\data\t_santahat_co_redpattern2.paa");
-    
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_BluePattern1, "Santa Hat (Blue Pattern)", "tc\headgear_santahat\data\t_santahat_co_blue_pattern1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_FestivePattern1, "Santa Hat (Festive Pattern)", "tc\headgear_santahat\data\t_santahat_co_festive_pattern1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Buffalo1, "Santa Hat (Buffalo)", "tc\headgear_santahat\data\t_santahat_co_buffalo1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Camo_Aus1, "Santa Hat (Camo Aus)", "tc\headgear_santahat\data\t_santahat_co_camo_aus1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Camo_Cadpat1, "Santa Hat (Camo Cadpat)", "tc\headgear_santahat\data\t_santahat_co_camo_cadpat1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Camo_Tigerstripe1, "Santa Hat (Camo Tigerstripe)", "tc\headgear_santahat\data\t_santahat_co_camo_tigerstripe1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Garf1, "Santa Hat (Garf)", "tc\headgear_santahat\data\t_santahat_co_garf1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Missing1, "Santa Hat (Missing)", "tc\headgear_santahat\data\t_santahat_co_missing1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Pink1, "Santa Hat (Pink)", "tc\headgear_santahat\data\t_santahat_co_pink1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Stealth1, "Santa Hat (Stealth)", "tc\headgear_santahat\data\t_santahat_co_stealth1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Pride1, "Santa Hat (Pride)", "tc\headgear_santahat\data\t_santahat_co_pride1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Trans1, "Santa Hat (Trans)", "tc\headgear_santahat\data\t_santahat_co_trans1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Bi1, "Santa Hat (Bi)", "tc\headgear_santahat\data\t_santahat_co_bi1.paa");
+
     class NVGoggles;
-    class TC_NVG_Hat_Santa : NVGoggles
+    class TC_NVG_Hat_Santa1 : NVGoggles
     {
         scope = 2;
         author = "Tyen";
@@ -105,7 +124,7 @@ class CfgWeapons
         {
             camo1
         };
-        hiddenSelectionsTextures[] = {"tc\headgear_santahat\data\t_santahat_co_red1.paa"};
+        hiddenSelectionsTextures[] = {"tc\headgear_santahat\data\t_santahat_co_santa1.paa"};
         class ItemInfo
         {
             type = 616;
@@ -120,19 +139,25 @@ class CfgWeapons
         };
     };
 
-    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa_BluePattern, "Santa Hat (Blue Pattern)", "tc\headgear_santahat\data\t_santahat_co_bluepattern1.paa");
-    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa_CamoM81, "Santa Hat (Camo M81)", "tc\headgear_santahat\data\t_santahat_co_camo1.paa");
-    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa_MixedPattern, "Santa Hat (Mixed Pattern)", "tc\headgear_santahat\data\t_santahat_co_mixedpattern1.paa");
-    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa_FlagPride, "Santa Hat (Pride)", "tc\headgear_santahat\data\t_santahat_co_flagpride1.paa");
-    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa_FlagTrans, "Santa Hat (Trans)", "tc\headgear_santahat\data\t_santahat_co_flagtrans1.paa");
-    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa_RedPattern1, "Santa Hat (Red Pattern 1)", "tc\headgear_santahat\data\t_santahat_co_redpattern1.paa");
-    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa_RedPattern2, "Santa Hat (Red Pattern 2)", "tc\headgear_santahat\data\t_santahat_co_redpattern2.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_BluePattern, "Santa Hat (Blue Pattern)", "tc\headgear_santahat\data\t_santahat_co_blue_pattern1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_FestivePattern1, "Santa Hat (Festive Pattern)", "tc\headgear_santahat\data\t_santahat_co_festive_pattern1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Buffalo1, "Santa Hat (Buffalo)", "tc\headgear_santahat\data\t_santahat_co_buffalo1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Camo_Aus1, "Santa Hat (Camo Aus)", "tc\headgear_santahat\data\t_santahat_co_camo_aus1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Camo_Cadpat1, "Santa Hat (Camo Cadpat)", "tc\headgear_santahat\data\t_santahat_co_camo_cadpat1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Camo_Tigerstripe1, "Santa Hat (Camo Tigerstripe)", "tc\headgear_santahat\data\t_santahat_co_camo_tigerstripe1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Garf1, "Santa Hat (Garf)", "tc\headgear_santahat\data\t_santahat_co_garf1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Missing1, "Santa Hat (Missing)", "tc\headgear_santahat\data\t_santahat_co_missing1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Pink1, "Santa Hat (Pink)", "tc\headgear_santahat\data\t_santahat_co_pink1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Stealth1, "Santa Hat (Stealth)", "tc\headgear_santahat\data\t_santahat_co_stealth1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Pride1, "Santa Hat (Pride)", "tc\headgear_santahat\data\t_santahat_co_pride1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Trans1, "Santa Hat (Trans)", "tc\headgear_santahat\data\t_santahat_co_trans1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Bi1, "Santa Hat (Bi)", "tc\headgear_santahat\data\t_santahat_co_bi1.paa");
 };
 
 class CfgGlasses
 {
     class None;
-    class TC_Glasses_Hat_Santa_Base: None
+    class TC_Glasses_Hat_Santa1: None
     {
         scope = 2;
         author = "Tyen";
@@ -142,16 +167,22 @@ class CfgGlasses
         hiddenSelections[] = {
             camo1
         };
-        hiddenSelectionsTextures[] = {"tc\headgear_santahat\data\t_santahat_co_red1.paa"};
+        hiddenSelectionsTextures[] = {"tc\headgear_santahat\data\t_santahat_co_santa1.paa"};
         identityTypes[] = {};
         mass = 5;
     };
 
-    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa_BluePattern, "Santa Hat (Blue Pattern)", "tc\headgear_santahat\data\t_santahat_co_bluepattern1.paa");
-    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa_CamoM81, "Santa Hat (Camo M81)", "tc\headgear_santahat\data\t_santahat_co_camo1.paa");
-    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa_FestivePattern, "Santa Hat (Festive Pattern)", "tc\headgear_santahat\data\t_santahat_co_mixedpattern1.paa");
-    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa_FlagPride, "Santa Hat (Pride)", "tc\headgear_santahat\data\t_santahat_co_flagpride1.paa");
-    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa_FlagTrans, "Santa Hat (Trans)", "tc\headgear_santahat\data\t_santahat_co_flagtrans1.paa");
-    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa_RedPattern1, "Santa Hat (Red Pattern 1)", "tc\headgear_santahat\data\t_santahat_co_redpattern1.paa");
-    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa_RedPattern2, "Santa Hat (Red Pattern 2)", "tc\headgear_santahat\data\t_santahat_co_redpattern2.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_BluePattern, "Santa Hat (Blue Pattern)", "tc\headgear_santahat\data\t_santahat_co_blue_pattern1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_FestivePattern1, "Santa Hat (Festive Pattern)", "tc\headgear_santahat\data\t_santahat_co_festive_pattern1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Buffalo1, "Santa Hat (Buffalo)", "tc\headgear_santahat\data\t_santahat_co_buffalo1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Camo_Aus1, "Santa Hat (Camo Aus)", "tc\headgear_santahat\data\t_santahat_co_camo_aus1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Camo_Cadpat1, "Santa Hat (Camo Cadpat)", "tc\headgear_santahat\data\t_santahat_co_camo_cadpat1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Camo_Tigerstripe1, "Santa Hat (Camo Tigerstripe)", "tc\headgear_santahat\data\t_santahat_co_camo_tigerstripe1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Garf1, "Santa Hat (Garf)", "tc\headgear_santahat\data\t_santahat_co_garf1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Missing1, "Santa Hat (Missing)", "tc\headgear_santahat\data\t_santahat_co_missing1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Pink1, "Santa Hat (Pink)", "tc\headgear_santahat\data\t_santahat_co_pink1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Stealth1, "Santa Hat (Stealth)", "tc\headgear_santahat\data\t_santahat_co_stealth1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Pride1, "Santa Hat (Pride)", "tc\headgear_santahat\data\t_santahat_co_pride1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Trans1, "Santa Hat (Trans)", "tc\headgear_santahat\data\t_santahat_co_trans1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Bi1, "Santa Hat (Bi)", "tc\headgear_santahat\data\t_santahat_co_bi1.paa");
 };
