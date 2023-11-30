@@ -41,29 +41,6 @@ class CfgWeapons
                 camo1
             };
         };
-        class AnimationSources
-        {
-            class ScrollSource
-            {
-                source = time;
-                animPeriod = 1;
-                initPhase = 0;
-            };
-        };
-        class UVAnimations
-        {
-            class ScrollUV
-			{
-				type="translation";
-				source="ScrollSource";
-				sourceAddress="loop";
-				section="camo1";
-				minValue=0;
-				maxValue=1.6;
-				offset0[]={0,0};
-				offset1[]={0.1,0.1};
-			};
-        };
     };
 };
 class CfgGlasses
