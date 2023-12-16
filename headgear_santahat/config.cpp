@@ -109,6 +109,7 @@ class CfgWeapons
     SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Pride1, "Santa Hat (Pride)", "tc\headgear_santahat\data\t_santahat_co_pride1.paa");
     SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Trans1, "Santa Hat (Trans)", "tc\headgear_santahat\data\t_santahat_co_trans1.paa");
     SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Bi1, "Santa Hat (Bi)", "tc\headgear_santahat\data\t_santahat_co_bi1.paa");
+    SANTA_HAT_HELMET_VARIATION(TC_Helmet_Hat_Santa1, TC_Helmet_Hat_Santa1_Nb1, "Santa Hat (Non Binary)", "tc\headgear_santahat\data\t_santahat_co_nb1.paa");
 
     class NVGoggles;
     class TC_NVG_Hat_Santa1 : NVGoggles
@@ -152,6 +153,7 @@ class CfgWeapons
     SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Pride1, "Santa Hat (Pride)", "tc\headgear_santahat\data\t_santahat_co_pride1.paa");
     SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Trans1, "Santa Hat (Trans)", "tc\headgear_santahat\data\t_santahat_co_trans1.paa");
     SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Bi1, "Santa Hat (Bi)", "tc\headgear_santahat\data\t_santahat_co_bi1.paa");
+    SANTA_HAT_NVG_VARIATION(TC_NVG_Hat_Santa1, TC_NVG_Hat_Santa1_Nb1, "Santa Hat (Non Binary)", "tc\headgear_santahat\data\t_santahat_co_nb1.paa");
 };
 
 class CfgGlasses
@@ -185,4 +187,5 @@ class CfgGlasses
     SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Pride1, "Santa Hat (Pride)", "tc\headgear_santahat\data\t_santahat_co_pride1.paa");
     SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Trans1, "Santa Hat (Trans)", "tc\headgear_santahat\data\t_santahat_co_trans1.paa");
     SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Bi1, "Santa Hat (Bi)", "tc\headgear_santahat\data\t_santahat_co_bi1.paa");
+    SANTA_HAT_GLASSES_VARIATION(TC_Glasses_Hat_Santa1, TC_Glasses_Hat_Santa1_Nb1, "Santa Hat (Non Binary)", "tc\headgear_santahat\data\t_santahat_co_nb1.paa");
 };
