@@ -42,6 +42,7 @@ class CfgPatches
             "TC_Helmet_Hat_Santa1_Pride1",
             "TC_Helmet_Hat_Santa1_Trans1",
             "TC_Helmet_Hat_Santa1_Bi1",
+            "TC_Helmet_Hat_Santa1_Nb1",
         };
         requiredVersion = 0.1;
         requiredAddons[] = 
