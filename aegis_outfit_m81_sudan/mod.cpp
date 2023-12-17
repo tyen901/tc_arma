@@ -1,4 +1,4 @@
-name = "Tyen Customs - Aegis Guerilla Outfit M81 Sudan";
+name = "Tyen Customs - Aegis - Guerilla Outfit M81 Sudan";
 picture = "logo.paa";
 logo = "logo.paa";
 logoOver = "logo.paa";

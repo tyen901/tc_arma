@@ -1,4 +1,4 @@
-name = "Tyen Customs - USArmy ACH M81 Rainbow";
+name = "Tyen Customs - CUP - USArmy ACH M81 Rainbow";
 picture = "logo.paa";
 logo = "logo.paa";
 logoOver = "logo.paa";

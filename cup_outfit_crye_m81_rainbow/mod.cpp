@@ -1,4 +1,4 @@
-name = "Tyen Customs - Crye M81 Rainbow";
+name = "Tyen Customs - CUP - Crye M81 Rainbow";
 picture = "logo.paa";
 logo = "logo.paa";
 logoOver = "logo.paa";
