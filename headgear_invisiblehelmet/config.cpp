@@ -45,7 +45,6 @@ class CfgWeapons
         displayName = "Helmet Invisible";
         descriptionShort = "Invisible Helmet";
         model = "\tc\headgear_invisiblehelmet\invisible.p3d";
-        scope = 2;
 		class ItemInfo: ItemInfo
 		{
 			mass = 20;
