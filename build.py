@@ -2,6 +2,8 @@ import os
 import subprocess
 import shutil
 import subprocess
+import datetime
+import zipfile
 
 def run_pbo_project(input_folder, output_folder):
     # Ensure the output folder exists
@@ -56,6 +58,24 @@ def main():
         shutil.rmtree(output_folder)
     
     run_pbo_project(script_dir, output_folder)
+
+    # Get the current date and git hash
+    date_str = datetime.datetime.now().strftime('%y.%m.%d')
+    git_hash = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD']).decode('utf-8').strip()
+    zip_filename = f"{date_str}.{git_hash}.zip"
+
+    # Delete the zip file if it exists
+    if os.path.exists(zip_filename):
+        print(f"Deleting {zip_filename}")
+        os.remove(zip_filename)
+
+    # Create a zip file
+    with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
+        for root, dirs, files in os.walk(output_folder):
+            for file in files:
+                zipf.write(os.path.join(root, file), os.path.relpath(os.path.join(root, file), output_folder))
+
+    print(f"Build completed and zipped as {zip_filename}")
 
 if __name__ == "__main__":
     main()
