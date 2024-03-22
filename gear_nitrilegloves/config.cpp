@@ -21,8 +21,8 @@ class CfgWeapons
     {
         scope = 2;
         author = "Tyen";
-        displayName = "NItrile Gloves";
-        descriptionShort = "Nitril Gloves";
+        displayName = "Nitrile Gloves";
+        descriptionShort = "Nitrile Gloves";
         model = "\tc\gear_nitrilegloves\nitrilegloves.p3d";
         modelOptics = "\A3\Weapons_F\empty";
         visionMode[] = {"Normal","Normal"};
@@ -45,8 +45,8 @@ class CfgGlasses
     {
         scope = 2;
         author = "Tyen";
-        displayName = "Nitirle Gloves";
-        descriptionShort = "Nitirle Gloves";
+        displayName = "Nitrile Gloves";
+        descriptionShort = "Nitrile Gloves";
         model = "\tc\gear_nitrilegloves\nitrilegloves.p3d";
         identityTypes[] = {};
         mass = 5;
