@@ -8,7 +8,7 @@ PixelShaderID="Super";
 VertexShaderID="Super";
 class Stage1
 {
-	texture="tc\spooky\data\t_hat_navyseer_1_nohq.paa";
+	texture="tc\tbw\data\t_hat_navyseer_1_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="tc\spooky\data\t_hat_navyseer_1_smdi.paa";
+	texture="tc\tbw\data\t_hat_navyseer_1_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

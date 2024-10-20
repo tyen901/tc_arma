@@ -1,4 +1,4 @@
-name = "Tyen Customs - Spooky";
+name = "Tyen Customs - Tactical Breach Wizards";
 picture = "logo.paa";
 logo = "logo.paa";
 logoOver = "logo.paa";
