@@ -1,0 +1,39 @@
+[submodule "mirrorform"]
+	path = mirrorform
+	url = git@github.com:tyen-customs-a3/mirrorform.git
+[submodule "rhs_headband"]
+	path = rhs_headband
+	url = git@github.com:tyen-customs-a3/rhs_headband.git
+[submodule "cup_helmet_usarmy_ach_rainbow"]
+	path = cup_helmet_usarmy_ach_rainbow
+	url = git@github.com:tyen-customs-a3/cup_helmet_usarmy_ach_rainbow.git
+[submodule "cup_outfit_crye_m81_rainbow"]
+	path = cup_outfit_crye_m81_rainbow
+	url = git@github.com:tyen-customs-a3/cup_outfit_crye_m81_rainbow.git
+[submodule "aegis_outfit_m81_sudan"]
+	path = aegis_outfit_m81_sudan
+	url = git@github.com:tyen-customs-a3/aegis_outfit_m81_sudan.git
+[submodule "headgear_invisiblehelmet"]
+	path = headgear_invisiblehelmet
+	url = git@github.com:tyen-customs-a3/headgear_invisiblehelmet.git
+[submodule "headgear_reindeernose"]
+	path = headgear_reindeernose
+	url = git@github.com:tyen-customs-a3/headgear_reindeernose.git
+[submodule "headgear_pumpkin"]
+	path = headgear_pumpkin
+	url = git@github.com:tyen-customs-a3/headgear_pumpkin.git
+[submodule "wildwest"]
+	path = wildwest
+	url = git@github.com:tyen-customs-a3/wildwest.git
+[submodule "tbw"]
+	path = tbw
+	url = git@github.com:tyen-customs-a3/tbw.git
+[submodule "headgear_antlers"]
+	path = headgear_antlers
+	url = git@github.com:tyen-customs-a3/headgear_antlers.git
+[submodule "headgear_santahat"]
+	path = headgear_santahat
+	url = git@github.com:tyen-customs-a3/headgear_santahat.git
+[submodule "gear_nitrilegloves"]
+	path = gear_nitrilegloves
+	url = git@github.com:tyen-customs-a3/gear_nitrilegloves.git
